@@ -1,0 +1,20 @@
+
+// Collect user input
+let totalBudget = Number(prompt("Enter your total budget (KES):"));
+
+let totalExpenses = Number(prompt("Enter your total expenses (KES):"));
+
+// Function to calculate remaining balance
+function calculateBalance(budget, expenses) {
+    return budget - expenses;
+}
+
+// Calculate remaining balance
+let remainingBalance = calculateBalance(totalBudget, totalExpenses);
+
+// Display budget summary
+console.log("===== SpendWise Budget Summary =====");
+console.log("Total Budget: KES " + totalBudget);
+console.log("Total Expenses: KES " + totalExpenses);
+console.log("Remaining Balance: KES " + remainingBalance);
+console.log("====================================");
